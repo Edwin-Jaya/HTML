@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Assistant:wght@800&family=Bebas+Neue&family=Courgette&family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Assistant:wght@800&family=Bebas+Neue&family=Courgette&family=Secular+One&family=Staatliches&display=swap" rel="stylesheet">
+    <title></title>
+</head>
+<script>
+    function openlaman(namalaman) {
+     var i;
+     var x = document.getElementsByClassName("laman");
+     for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+     }
+     document.getElementById(namalaman).style.display = "block";
+    }
+</script>
+<style>
+body,html{
+    margin:0;
+    height: 100%;
+    background-image:url('./komponen/gambar/bekgron.jpg');
+}
+.kepala{
+    font-family: 'Archivo Black', sans-serif;
+}
+.judulutama{
+    font-family: 'Archivo Black', sans-serif;
+    background-image: url('./komponen/gambar/banneur.jpg');
+    padding:2cm;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pertama{
+    background-image: url('./komponen/gambar/utama.jpg');
+    background-size: cover;
+    position: relative;
+    background-position:center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    overflow: hidden;
+
+}
+.sambutan{
+    margin-top: 7cm;
+    margin-left: 25%;
+    text-align: center;
+    width:100%;
+    position: absolute;
+}
+
+.katsam{
+    font-size: 18pt;
+    letter-spacing: 2px;
+    background-color: whitesmoke;
+    color:black;
+}
+
+.kedua{
+    background-image: url('./komponen/gambar/motorsatu.jpg');
+    background-size: contain;
+    position: relative;
+    background-position:left;
+    background-position-x: -2cm;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    overflow: hidden;
+}
+.ketiga{
+    background-image: url('./komponen/gambar/motordua.jpg');
+    background-size: contain;
+    position: relative;
+    background-position:left;
+    background-position-x: -2cm;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.keempat{
+    background-image: url('./komponen/gambar/motortiga.jpg');
+    background-size: contain;
+    position: relative;
+    background-position:left;
+    background-position-x: -2cm;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.kelima{
+    background-image: url('./komponen/gambar/probekgron.jpg');
+    background-size: cover;
+    position: relative;
+    background-position:center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    overflow: hidden;
+}
+.judul{
+    margin-top: 10%;
+    text-align:right;
+    width:100%;
+    position: absolute;
+}
+.tulisan{
+    font-size: 28pt;
+    background-color: whitesmoke;
+    color:black;
+    letter-spacing: 10px;
+    font-family: 'Staatliches', cursive;
+
+}
+.desk{
+    font-size: 14pt;
+    color:black;
+    letter-spacing: 2px;
+    background-color: whitesmoke;
+    float: right;
+    font-family: 'Secular One', sans-serif;
+
+}
+.secone{
+    text-align: center;
+    font-size: 16pt;
+}
+.footer{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(36, 31, 31);
+    color: white;
+    text-align: left;
+    padding: 2px;
+    padding-left: 15px;
+}
+</style>
+<body>
+    <div class="banner w3-container w3-black">
+        <h1 class="judulutama">EDWIN DAVIDSON INDONESIA</h1>
+    </div>
+    <div class="kepala w3-bar w3-black">
+        <button class="w3-bar-item w3-black w3-round" onclick="openlaman('home')">HOME</button>
+        <button class="w3-bar-item w3-black w3-round" onclick="openlaman('msatu')">FAT BOB</button>
+        <button class="w3-bar-item w3-black w3-round" onclick="openlaman('mdua')">STREET BOB</button>
+        <button class="w3-bar-item w3-black w3-round" onclick="openlaman('mtiga')">FAT BOY</button>
+        <button class="w3-bar-item w3-black w3-round" onclick="openlaman('profil')">PROFILE</button>
+    </div>
+    <div id='home' class="pertama w3-container laman">
+        <div class="sambutan">
+            <span class="katsam">
+            Selamat Datang<br> 
+            di Website<br> 
+            Resmi Edwin Davidson<br> 
+            Indonesia!
+            </span>
+        </div>
+        <video width="720" height="720" autoplay muted loop>
+            <source src="./komponen/video/videopromosi.mp4" type="video/mp4">
+        </video>
+    </div>
+        <div id="msatu" class="kedua laman w3-animate-zoom" style="display: none">
+                <div class="judul">
+                    <span class="tulisan">
+                        2022 FAT BOB<br><br>
+                    </span>
+                            <span class="desk">
+                                Gaya bobber polos nan autentik.<br>
+                                Kanvas kosong yang bisa disesuaikan sesuaikan hati.<br>
+                                Posisi berkendara santai<br>
+                                Kontrol kaki depan<br>
+                                Jok Penumpang tinggi<br><br>
+                                INI MOTOR YANG TEPAT UNTUK<br>
+                                Seniman dan pelaku kustom menyukai tampilan kuno<br>
+                                Berkendara di kota atau touring singkat<br>
+                                Mesin Milwaukee-Eight™ 107 V-Twin<br>
+                                Setang yang mudah dijangkau<br>
+                            </span>
+                </div>
+        </div>
+        <div id="mdua" class="ketiga laman w3-animate-top" style="display:none">
+            <div class="judul">
+                <span class="tulisan">
+                    2022 STREET BOB<br><br>
+                </span>
+                        <span class="desk">
+                            Gaya ban kekar dengan hantaman berat dilengkapi<br>
+                            tangki kacang ikonis dan postur bulldog.<br>
+                            Posisi berkendara regang<br>
+                            Kontrol kaki yang dipasang di tengah<br><br>
+                            INI MOTOR YANG TEPAT UNTUK<br>
+                            Pengendara kota yang ingin mendapatkan perhatian<br>
+                            Profil penuh tenaga<br>
+                            Berkendara mulus<br>
+                            Pengendalian yang tajam<br>
+                            Mesin Evolution™ V-Twin Berpendingin Udara 1.200 cc<br>
+                        </span>
+                </div>
+            </div>
+        </div>
+    <div id="mtiga" class="keempat laman w3-animate-bottom" style="display:none">
+        <div class="judul">
+            <span class="tulisan">
+                2022 FAT BOY<br><br>
+            </span>
+                    <span class="desk">
+                        Bobber gagah dalam balutan warna hitam.<br>
+                                Basis performa sempurna untuk kustomisasi.<br>
+                                Posisi berkendara santai<br>
+                                Kontrol kaki depan<br>
+                                Jok Penumpang<br><br>
+                                INI MOTOR YANG TEPAT UNTUK<br>
+                                Basis performa sempurna untuk kustomisasi<br>
+                                Mesin Milwaukee-Eight™ 114<br>
+                                Jok 2-up<br> 
+                                Roda berjari-jari hitam<br> 
+                                Sentuhan akhir gelap<br>
+                    </span>
+            </div>
+        </div>
+    </div>
+    <div id="profil" class="kelima laman w3-animate-zoom" style="display:none">
+        <div class="judul">
+            <span class="tulisan">
+                PROFILE PENDIRI<br><br>
+            </span>
+                    <span class="desk">
+                        <p>NIM:10121154</p>
+                        <p>NAMA LENGKAP:EDWIN LIONA JAYA</p>
+                        <p>KELAS:IF-4</p>
+                    </span>
+            </div>
+            <img src="./komponen/gambar/edwin.jpeg" height="500" width="500" style="margin-top: 1cm;">
+        </div>
+    </div>
+        <div class="footer">
+            <p>Website ini dibangun untuk memenuhi tugas mata kuliah Pemrograman Web.</p>
+            <p>Nim:10121154</p>
+            <p>Nama Lengkap:EDWIN LIONA JAYA</p>
+            <p>Kelas:IF-4</p>
+        </div>
+</body>
+</html>
